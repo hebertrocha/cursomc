@@ -10,8 +10,6 @@ import com.hebertrocha.cursomc.domain.Categoria;
 import com.hebertrocha.cursomc.repositories.CategoriaRepository;
 import com.hebertrocha.cursomc.services.exceptions.ObjectNotFoundException;
 
-
-
 @Service
 public class CategoriaService {
 	
@@ -25,5 +23,9 @@ public class CategoriaService {
 
 	}
 	
+	public Categoria insert(Categoria obj) {
+		obj.setId(null);
+		return repo.save(obj);
+	}
 
 }
