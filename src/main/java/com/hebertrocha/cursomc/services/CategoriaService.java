@@ -12,7 +12,6 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
 import com.hebertrocha.cursomc.domain.Categoria;
-import com.hebertrocha.cursomc.domain.Cliente;
 import com.hebertrocha.cursomc.dto.CategoriaDTO;
 import com.hebertrocha.cursomc.repositories.CategoriaRepository;
 import com.hebertrocha.cursomc.services.exceptions.DataIntegrityException;
